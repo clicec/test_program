@@ -16,12 +16,6 @@ DefaultDebugStart = 'kill_base Start'
 
 logging.basicConfig(filename=DefaultLog, level=logging.INFO)
 	
-class KillException(Exception):
-	pass
-	
-class KillClientNotConnected(KillException):
-	pass
-	
 	
 class ClientService(rpyc.Service):
 	DebugInitStart = 'ClientService Start'
